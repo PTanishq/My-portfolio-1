@@ -8,7 +8,7 @@
     width: 100%;
     height: 550vh;
     background-color: white;
-    background-image: url(https://images.unsplash.com/photo-1604076947037-d909e2f10fca?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-image: url(https://images.unsplash.com/photo-1604076984203-587c92ab2e58?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-position: center;
     background-size: cover;
     overflow: hidden;
@@ -239,4 +239,108 @@
 .last a{
     text-decoration: none;
     color: black;
+}
+
+
+/*Code for responsiveness*/
+
+@media(max-width:500px) {
+    .main{
+        height:170rem;
+    }
+
+    .content-1 h1{
+        font-size: 3rem;
+    }
+
+    .content-1{
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    .me img{
+        position: relative;
+        min-height:min-content;
+        margin-right: 50%;
+        height: 13rem;
+        width: 13rem;
+    }
+    .me .cover{
+        position: absolute;
+        margin-right: 60%;
+        height: 10rem;
+        width: 10rem;
+    }
+    
+    .main-2{
+        margin: 0.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-2 .mid-L-  p{
+        font-size: 1rem;
+        width: 90%;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+    }
+
+    .main-2 .mid-L- .badge{
+        font-size: 1rem;
+        margin-bottom: 3rem;
+        
+    }
+
+    .main-2 .mid-R{
+        margin-left: 0;
+        position: relative;
+        margin-right: 50%;
+    }
+
+    .main-3{
+        display: flex;
+        flex-direction: column;
+        margin-top: 4rem;
+        padding: 0;
+    }
+
+    .main-3 .boxes{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-4{
+        display: none;
+    }
+
+    .main-5{
+        padding: 0;
+        margin:3rem;
+    }
+    
+    .main-5 img{
+        height: 3rem;
+    }
+
+    .main-5 h1{
+        font-size: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .main-5 .badge{
+        font-size: 1rem;
+        
+    }
+
+    .last{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        font-size: 0.5rem;
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+    }
+    
+    
 }
